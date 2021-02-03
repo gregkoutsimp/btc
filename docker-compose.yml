@@ -1,0 +1,22 @@
+version: '3'
+services:
+    app:
+      image: gregkoutsimp/btc:latest
+      ports:
+        - "5000:5000"
+      links: 
+        - db
+      networks:
+        - btcnet
+    db:
+     image: mongo:4.2.10
+     volumes:
+      - mongodata:/data/db
+     networks:
+      - btcnet
+volumes:
+ mongodata:
+ 
+networks:
+  btcnet:
+    driver: bridge
