@@ -16,7 +16,8 @@ Download the `YAML` file and run the `docker-compose up` command.
 #### Development Workflow 
 
 In case changes needed to be made in the code, download the repository. 
-Apply changes and then build the new image
+Apply changes and then build the new image. The new image must to have the same tag as the previews one. Afterwards, we need to apply the new image name to the `YAML` file.
+Otherwise, you can change the *image* command with *build*, in the app section and assign as value the path where the app code is stored. The new image can be created by running the `docker-compose build` command.
 
 
 
