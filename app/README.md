@@ -2,21 +2,29 @@
 
 #### Introduction 
 
-This repositiry contains the complete definition to builld a Docker Image for Bitcoin Price Chart, available on Docker Hub as `gregkoutsimp/btc`
+This repositiry contains the source code of the Image for the Bitcoin Price Chart, available on Docker Hub as `gregkoutsimp/btc`.
 
-This images does not run as stand alone. It is a part of a mulit-conatiner docker application.
-The requires `YAML` file can be found in this repository.  
-The Docker Compose tool is used to run the application.
+#### API
 
-#### Instructions
+##### /daily
+Rerturns the daily valatily of Bitcoin price using the opening price and the current price. Also display the current price.
 
-Download the `YAML` file and run the `docker-compose up` command. 
+##### /statistcs 
+Reeturns the highest and lowest price of Bitcoin during the last 30 days and the day they occur.
+
+##### /monthly 
+Returns a plot of the Bitcoin price during the last 30 days.
 
 
-#### Development Workflow 
 
-In case changes needed to be made in the code, download the repository. 
-Apply changes and then build the new image
+
+
+
+
+
+
+
+
 
 
 
