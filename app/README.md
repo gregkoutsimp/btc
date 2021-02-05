@@ -3,7 +3,6 @@
 #### Introduction 
 
 This repositiry contains the source code of the Image for the Bitcoin Price Chart, available on Docker Hub as `gregkoutsimp/btc`.
-The directory in linked to DockerHub. Any new commits will automaticaly update and the Docker Image.
 
 #### Dependecies 
 
