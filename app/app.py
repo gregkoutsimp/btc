@@ -31,6 +31,8 @@ df = data.DataReader("BTC-USD",
                        start=month,
                        end=today,
                        data_source='yahoo')  #['Adj Close']
+
+#Create the plot  for monthly price
 df['Close'].plot()
 
 plt.title('BTC Price Chart')
@@ -43,9 +45,6 @@ plt.savefig(bytes_image, format='png')
 bytes_image.seek(0)
 
 df.reset_index(inplace=True)
-
-# #Calculate the percenatges diff of the price
-# daily_var = round(100*(df[df['Date']==today]['Close'] - df[df['Date'] == today]['Open'])/df[df['Date'] == today]['Close'], 2)
 
 #convert df to json
 #json_data = df.to_json(orient="records", date_format='iso')
