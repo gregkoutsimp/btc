@@ -1,9 +1,0 @@
-Flask
-flask_restful
-pymongo
-requests
-pandas 
-datetime
-pandas_datareader
-matplotlib
-
